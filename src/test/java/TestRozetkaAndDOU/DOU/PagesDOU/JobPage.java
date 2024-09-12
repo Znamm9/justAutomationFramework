@@ -51,4 +51,12 @@ public class JobPage extends BasePage {
     public List<WebElement> getRatingFilterTotalScoreNumbers() {
         return findElementsByXpath("//div[@class='score all']");
     }
+
+    public WebElement getButtonFind() {
+        return getElement("//input[@class='btn-search']");
+    }
+
+    public List<WebElement> getButtonsRegionFilter() {
+        return getElements("//div[@class='b-region-filter']/ul/li/a");
+    }
 }
